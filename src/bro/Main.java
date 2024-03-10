@@ -12,16 +12,6 @@ public class Main {
         label.setText("Bro, do you even code?");
 
         JFrame frame = new JFrame();
-
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setResizable(false);
-        frame.setSize(500,500);
-        frame.setVisible(true);
-
-        JLabel label = new JLabel();
-        label.setText("Bro, do you even code?");
-
-        JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
         frame.setSize(500,500);
