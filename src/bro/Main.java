@@ -9,6 +9,16 @@ import java.awt.*;
 public class Main {
     public static void main(String[] args) {
 
+        JLabel label = new JLabel();
+        label.setText("Bro, do you even code?");
+
+        JFrame frame = new JFrame();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setResizable(false);
+        frame.setSize(500,500);
+        frame.setVisible(true);
+        frame.add(label);
+
        /* JFrame frame = new JF rame();
         frame.setTitle("Jframe title goes here");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -20,6 +30,6 @@ public class Main {
         frame.setIconImage(image.getImage());
         frame.getContentPane().setBackground(new Color(0x123456));*/
 
-        MyFrames myFrames = new MyFrames();
+       // MyFrames myFrames = new MyFrames();
     }
 }
