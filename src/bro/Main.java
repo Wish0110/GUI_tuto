@@ -14,6 +14,7 @@ public class Main {
         JLabel label = new JLabel();
         label.setText("Bro, do you even code?");
         label.setIcon(image);
+        label.setHorizontalTextPosition(JLabel.CENTER);
 
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
