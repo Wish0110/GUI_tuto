@@ -17,7 +17,7 @@ public class Main {
         label.setHorizontalTextPosition(JLabel.CENTER);
         label.setVerticalTextPosition(JLabel.TOP);
         label.setForeground(new Color(0x00ff00));
-        label.setFont(new Font("MV Boli",Font.PLAIN,20));
+
 
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
