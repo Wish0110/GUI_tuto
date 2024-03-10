@@ -8,8 +8,12 @@ import java.awt.*;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+
+        ImageIcon image = new ImageIcon("C:\\Users\\Admin\\Downloads\\Furniture__Flyer_-removebg-preview.png");
+
         JLabel label = new JLabel();
         label.setText("Bro, do you even code?");
+        label.setIcon(image);
 
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
