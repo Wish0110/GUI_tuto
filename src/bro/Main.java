@@ -9,7 +9,7 @@ import java.awt.*;
 public class Main {
     public static void main(String[] args) {
 
-        ImageIcon image = new ImageIcon("C:\\Users\\Admin\\Downloads\\Furniture__Flyer_-removebg-preview.png");
+        ImageIcon image = new ImageIcon("C:\\Users\\Admin\\Downloads\\OIP (14).jfif");
 
         JLabel label = new JLabel();
         label.setText("Bro, do you even code?");
@@ -18,7 +18,7 @@ public class Main {
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
-        frame.setSize(500,500);
+        frame.setSize(900,900);
         frame.setVisible(true);
         frame.add(label);
 
