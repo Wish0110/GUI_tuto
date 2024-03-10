@@ -16,7 +16,7 @@ public class Main {
         label.setIcon(image);
         label.setHorizontalTextPosition(JLabel.CENTER);
         label.setVerticalTextPosition(JLabel.TOP);
-        label.setForeground(new Color(0x00ff00));
+        label.setForeground(new Color(0x00ff50));
         label.setBackground(new Color(0x123456));
         label.setOpaque(true);
 
