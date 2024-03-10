@@ -9,7 +9,7 @@ import java.awt.*;
 public class Main {
     public static void main(String[] args) {
 
-        ImageIcon image = new ImageIcon("C:\\Users\\Admin\\Downloads\\OIP (14).jfif");
+        ImageIcon image = new ImageIcon("C:\\Users\\Admin\\Downloads\\Screenshot__167_-removebg-preview.png");
 
         JLabel label = new JLabel();
         label.setText("Bro, do you even code?");
@@ -17,7 +17,8 @@ public class Main {
         label.setHorizontalTextPosition(JLabel.CENTER);
         label.setVerticalTextPosition(JLabel.TOP);
         label.setForeground(new Color(0x00ff00));
-
+        label.setBackground(new Color(0x123456));
+        label.setOpaque(true);
 
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
