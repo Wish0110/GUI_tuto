@@ -15,11 +15,14 @@ public class Main {
         label.setText("Bro, do you even code?");
         label.setIcon(image);
         label.setHorizontalTextPosition(JLabel.CENTER);
+        label.setVerticalTextPosition(JLabel.TOP);
+        label.setForeground(new Color(0x00ff00));
+        label.setFont(new Font("MV Boli",Font.PLAIN,20));
 
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
-        frame.setSize(900,900);
+        frame.setSize(600,600);
         frame.setVisible(true);
         frame.add(label);
 
