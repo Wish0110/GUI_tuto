@@ -18,6 +18,10 @@ public class Main {
         bluePanel.setBackground(Color.blue);
         bluePanel.setBounds(250,0,250,250);
 
+        JPanel greenPanel = new JPanel();
+        greenPanel.setBackground(Color.green);
+        greenPanel.setBounds(500,0,250,250);
+
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(750,750);
@@ -25,5 +29,6 @@ public class Main {
         frame.setVisible(true);
         frame.add(redPanel);
         frame.add(bluePanel);
+        frame.add(greenPanel);
     }
 }
