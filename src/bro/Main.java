@@ -9,7 +9,7 @@ public class Main {
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500,500);
-        frame.setLayout(new BorderLayout());
+        frame.setLayout(new BorderLayout(10,10));
         frame.setVisible(true);
 
         JPanel panel1 = new JPanel();
