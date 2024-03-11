@@ -8,9 +8,16 @@ import java.awt.event.ActionListener;
 public class myFrame extends JFrame implements ActionListener{
 
     JButton button;
+    JLabel label;
     myFrame(){
 
         ImageIcon icon = new ImageIcon("C:\\Users\\Admin\\Downloads\\user.png");
+        ImageIcon icon1 = new ImageIcon("C:\\Users\\Admin\\Downloads\\icons8-star-filled-48.png");
+
+        label = new JLabel();
+        label.setIcon(icon1);
+        label.setBounds(100,150,100,150);
+        label.setVisible(false);
 
         button = new JButton();
         button.setBounds(100, 100, 250, 100);
@@ -31,12 +38,15 @@ public class myFrame extends JFrame implements ActionListener{
         this.setSize(500,500);
         this.setVisible(true);
         this.add(button);
+        this.add(label);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource()==button) {
-            System.out.println("poo");
+            //System.out.println("poo");
+            //button.setEnabled(false);
+            label.setVisible(true);
         }
     }
 }
