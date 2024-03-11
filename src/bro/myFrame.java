@@ -1,6 +1,7 @@
 package bro;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -17,6 +18,13 @@ public class myFrame extends JFrame implements ActionListener{
         button.setText("Button");
         button.setFocusable(false);
         button.setIcon(icon);
+        button.setHorizontalTextPosition(JButton.CENTER);
+        button.setVerticalTextPosition(JButton.BOTTOM);
+        button.setFont(new Font("Comic Sans",Font.BOLD,25));
+        button.setIconTextGap(-15);
+        button.setForeground(Color.orange);
+        button.setBackground(Color.LIGHT_GRAY);
+        button.setBorder(BorderFactory.createEtchedBorder());
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
