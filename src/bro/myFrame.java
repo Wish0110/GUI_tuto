@@ -9,10 +9,15 @@ public class myFrame extends JFrame implements ActionListener{
     JButton button;
     myFrame(){
 
+        ImageIcon icon = new ImageIcon("C:\\Users\\Admin\\Downloads\\user.png");
+
         button = new JButton();
-        button.setBounds(200, 100, 100, 50);
+        button.setBounds(100, 100, 250, 100);
         button.addActionListener((ActionListener) this);
-        button.setText("I'm a Button!");
+        button.setText("Button");
+        button.setFocusable(false);
+        button.setIcon(icon);
+
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
         this.setSize(500,500);
