@@ -33,7 +33,7 @@ public class Main {
         //frame.setLayout(null);
         frame.setVisible(true);
         frame.add(label);
-
+        frame.pack();
 
        /* JFrame frame = new JF rame();
         frame.setTitle("Jframe title goes here");
