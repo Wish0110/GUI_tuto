@@ -25,14 +25,15 @@ public class Main {
         label.setBorder(border);
         label.setVerticalAlignment(JLabel.CENTER);
         label.setHorizontalAlignment(JLabel.CENTER);
-        label.setBounds(100,100,250,250);
+        //label.setBounds(100,100,250,250);
 
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(700,600);
-        frame.setLayout(null);
+        //frame.setLayout(null);
         frame.setVisible(true);
         frame.add(label);
+
 
        /* JFrame frame = new JF rame();
         frame.setTitle("Jframe title goes here");
