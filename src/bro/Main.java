@@ -10,6 +10,12 @@ import java.awt.*;
 public class Main {
     public static void main(String[] args) {
 
+        ImageIcon icon = new ImageIcon("C:\\Users\\Admin\\Downloads\\icons8-star-filled-48.png");
+
+        JLabel label = new JLabel();
+        label.setText("Hi");
+        label.setIcon(icon);
+
         JPanel redPanel = new JPanel();
         redPanel.setBackground(Color.red);
         redPanel.setBounds(0,0,250,250);
