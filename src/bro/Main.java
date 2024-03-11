@@ -13,7 +13,7 @@ public class Main {
         ImageIcon image = new ImageIcon("C:\\Users\\Admin\\Downloads\\Screenshot__167_-removebg-preview.png");
         Border border = BorderFactory.createLineBorder(Color.green,3);
 
-
+        //label
         JLabel label = new JLabel();
         label.setText("Bro, do you even code?");
         label.setIcon(image);
