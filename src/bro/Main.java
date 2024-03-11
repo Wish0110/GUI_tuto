@@ -17,6 +17,7 @@ public class Main {
         label.setIcon(icon);
         label.setVerticalAlignment(JLabel.BOTTOM);
         label.setHorizontalAlignment(JLabel.RIGHT);
+        label.setBounds(0,0,75,75);
 
         JPanel redPanel = new JPanel();
         redPanel.setBackground(Color.red);
