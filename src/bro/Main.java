@@ -33,6 +33,7 @@ public class Main {
         frame.setSize(750,750);
         frame.setLayout(null);
         frame.setVisible(true);
+        redPanel.add(label);
         frame.add(redPanel);
         frame.add(bluePanel);
         frame.add(greenPanel);
