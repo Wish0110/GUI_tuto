@@ -7,14 +7,16 @@ import java.awt.event.ActionListener;
 
     public class textfield_frame extends JFrame implements ActionListener {
 
+        JButton button;
+        JTextField textField;
         textfield_frame(){
             this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             this.setLayout(new FlowLayout());
 
-            JButton button = new JButton("Submit");
+            button = new JButton("Submit");
             button.addActionListener(this);
 
-            JTextField textField = new JTextField();
+            textField = new JTextField();
             textField.setPreferredSize(new Dimension(250,40));
 
             this.add(button);
@@ -25,7 +27,9 @@ import java.awt.event.ActionListener;
 
         @Override
         public void actionPerformed(ActionEvent e) {
-
+            if(e.getSource()==button){
+                System.out.println("Welcome "+ textField.getText());
+            }
         }
     }
 
