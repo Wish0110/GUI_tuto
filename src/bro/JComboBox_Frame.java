@@ -14,6 +14,7 @@ public class JComboBox_Frame extends JFrame implements ActionListener {
 
         String[] animals = {"dog","cat","bird"};
         comboBox = new JComboBox(animals);
+        comboBox.addActionListener(this);
 
         this.add(comboBox);
         this.pack();
@@ -22,7 +23,8 @@ public class JComboBox_Frame extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource()==comboBox) {
-            System.out.println(comboBox.getSelectedItem());
+            //System.out.println(comboBox.getSelectedItem());
+            System.out.println(comboBox.getSelectedIndex());
         }
     }
 }
