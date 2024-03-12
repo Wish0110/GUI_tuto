@@ -6,7 +6,7 @@ public class Main {
 
         //text field
 
-        new radiobutton_frame();
+        new JComboBox_Frame();
       }
 
 }
