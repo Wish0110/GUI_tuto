@@ -7,11 +7,17 @@ import java.awt.event.ActionListener;
 
 public class Checkbox_Frame extends JFrame implements ActionListener {
 
+    JButton button;
+    JCheckBox checkBox;
     Checkbox_Frame(){
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
 
-        JCheckBox checkBox = new JCheckBox();
+        button = new JButton();
+        button.setText("submit");
+        button.addActionListener(this);
+
+        checkBox = new JCheckBox();
         checkBox.setText("I'am not a robot");
         checkBox.setFocusable(false);
         checkBox.setFont(new Font("Consolas",Font.HANGING_BASELINE,35));
@@ -22,6 +28,8 @@ public class Checkbox_Frame extends JFrame implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e) {
-
+        if (e.getSource()==button) {
+            System.out.println(checkBox.isSelected());
+        }
     }
 }
