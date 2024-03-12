@@ -6,7 +6,7 @@ public class Main {
 
         //text field
 
-        new Checkbox_Frame();
+        new radiobutton_frame();
       }
 
 }
