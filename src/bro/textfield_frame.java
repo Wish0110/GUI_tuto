@@ -12,6 +12,7 @@ import java.awt.event.ActionListener;
             this.setLayout(new FlowLayout());
 
             JButton button = new JButton("Submit");
+            button.addActionListener(this);
 
             JTextField textField = new JTextField();
             textField.setPreferredSize(new Dimension(250,40));
