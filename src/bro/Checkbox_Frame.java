@@ -9,9 +9,14 @@ public class Checkbox_Frame extends JFrame implements ActionListener {
 
     JButton button;
     JCheckBox checkBox;
+    ImageIcon xIcon;
+    ImageIcon checkIcon;
     Checkbox_Frame(){
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
+
+        xIcon = new ImageIcon("C:\\Users\\Admin\\Downloads\\OIP (16).jfif");
+        checkIcon = new ImageIcon("C:\\Users\\Admin\\Downloads\\OIP (15).jfif");
 
         button = new JButton();
         button.setText("submit");
