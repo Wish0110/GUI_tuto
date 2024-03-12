@@ -21,6 +21,8 @@ import java.awt.event.ActionListener;
             textField.setFont(new Font("Consolas",Font.PLAIN,35));
             textField.setForeground(new Color(0x00ff00));
             textField.setBackground(Color.black);
+            textField.setCaretColor(Color.white);
+
 
             this.add(button);
             this.add(textField);
@@ -32,6 +34,7 @@ import java.awt.event.ActionListener;
         public void actionPerformed(ActionEvent e) {
             if(e.getSource()==button){
                 System.out.println("Welcome "+ textField.getText());
+
             }
         }
     }
