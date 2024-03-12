@@ -7,12 +7,13 @@ import java.awt.event.ActionListener;
 
 public class JComboBox_Frame extends JFrame implements ActionListener {
 
+    JComboBox comboBox;
     JComboBox_Frame(){
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
 
         String[] animals = {"dog","cat","bird"};
-        JComboBox comboBox = new JComboBox(animals);
+        comboBox = new JComboBox(animals);
 
         this.add(comboBox);
         this.pack();
@@ -20,6 +21,8 @@ public class JComboBox_Frame extends JFrame implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e) {
-
+        if(e.getSource()==comboBox) {
+            System.out.println(comboBox.getSelectedItem());
+        }
     }
 }
