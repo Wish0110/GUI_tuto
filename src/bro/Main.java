@@ -6,7 +6,7 @@ public class Main {
 
         //text field
 
-        textfield_frame frame = new textfield_frame();
+        new Checkbox_Frame();
       }
 
 }
