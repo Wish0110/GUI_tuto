@@ -10,6 +10,14 @@ public class radiobutton_frame extends JFrame implements ActionListener {
     radiobutton_frame(){
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
+
+        JRadioButton pizzaButton = new JRadioButton("pizza");
+        JRadioButton hamburgerButton = new JRadioButton("hamburger");
+        JRadioButton hotdogButton = new JRadioButton("hotdog");
+
+        this.add(pizzaButton);
+        this.add(hamburgerButton);
+        this.add(hotdogButton);
         this.pack();
         this.setVisible(true);
     }
