@@ -22,6 +22,7 @@ public class Checkbox_Frame extends JFrame implements ActionListener {
         checkBox.setFocusable(false);
         checkBox.setFont(new Font("Consolas",Font.HANGING_BASELINE,35));
 
+        this.add(button);
         this.add(checkBox);
         this.pack();
         this.setVisible(true);
