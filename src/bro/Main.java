@@ -6,7 +6,7 @@ public class Main {
 
         //text field
 
-        new progress_bar();
+        new MenuBars();
       }
 
 }
