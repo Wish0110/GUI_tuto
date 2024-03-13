@@ -24,6 +24,7 @@ public class color_chooser extends JFrame implements ActionListener {
         label.setOpaque(true);
 
         this.add(button);
+        this.add(label);
         this.pack();
         this.setVisible(true);
     }
