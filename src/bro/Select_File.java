@@ -28,6 +28,8 @@ public class Select_File extends JFrame implements ActionListener {
 
             JFileChooser fileChooser = new JFileChooser();
 
+            fileChooser.setCurrentDirectory(new File("."));
+
            // int response = fileChooser.showOpenDialog(null);
             int response = fileChooser.showSaveDialog(null);
 
