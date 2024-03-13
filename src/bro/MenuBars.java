@@ -15,6 +15,14 @@ public class MenuBars extends JFrame implements ActionListener {
 
         JMenuBar menuBar = new JMenuBar();
 
+        JMenu fileMenu = new JMenu("File");
+        JMenu editMenu = new JMenu("Edit");
+        JMenu helpMenu = new JMenu("Help");
+
+        menuBar.add(fileMenu);
+        menuBar.add(editMenu);
+        menuBar.add(helpMenu);
+
         this.setJMenuBar(menuBar);
         this.setVisible(true);
     }
