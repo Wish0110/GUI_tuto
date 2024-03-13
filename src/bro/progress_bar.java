@@ -22,6 +22,17 @@ public class progress_bar {
     }
 
     public void fill(){
+        int counter = 0;
 
+        while (counter<=100) {
+
+        bar.setValue(counter);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        counter +=10;
+        }
     }
 }
