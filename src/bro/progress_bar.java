@@ -6,7 +6,7 @@ import java.awt.*;
 public class progress_bar {
 
     JFrame frame = new JFrame();
-    JProgressBar bar = new JProgressBar(0,500);
+    JProgressBar bar = new JProgressBar();
     progress_bar(){
 
         bar.setValue(0);
