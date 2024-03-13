@@ -23,6 +23,8 @@ public class MenuBars extends JFrame implements ActionListener {
         JMenuItem saveItem = new JMenuItem("Save");
         JMenuItem exitItem = new JMenuItem("Exit");
 
+        loadItem.addActionListener(this);
+
         fileMenu.add(loadItem);
         fileMenu.add(saveItem);
         fileMenu.add(exitItem);
