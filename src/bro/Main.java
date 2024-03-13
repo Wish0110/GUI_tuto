@@ -6,7 +6,7 @@ public class Main {
 
         //text field
 
-        new MenuBars();
+        new Select_File();
       }
 
 }
