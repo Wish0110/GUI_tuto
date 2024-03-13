@@ -28,7 +28,7 @@ public class progress_bar {
 
         bar.setValue(counter);
         try {
-            Thread.sleep(1000);
+            Thread.sleep(150);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
