@@ -1,16 +1,20 @@
 package bro;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class progress_bar {
 
     JFrame frame = new JFrame();
-    JProgressBar bar = new JProgressBar();
+    JProgressBar bar = new JProgressBar(0,500);
     progress_bar(){
 
         bar.setValue(0);
         bar.setBounds(0,0,420,50);
         bar.setStringPainted(true);
+        bar.setFont(new Font("MV Boil", Font.BOLD,25));
+        bar.setForeground(Color.red);
+        bar.setBackground(Color.black);
 
         frame.add(bar);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -34,5 +38,6 @@ public class progress_bar {
         }
         counter +=1;
         }
+        bar.setString("Done! :)");
     }
 }
