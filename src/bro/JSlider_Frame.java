@@ -27,6 +27,7 @@ public class JSlider_Frame implements ChangeListener {
         slider.setMajorTickSpacing(25);
 
         slider.setPaintLabels(true);
+        slider.setFont(new Font("MV Boil",Font.PLAIN,15));
 
         panel.add(slider);
         panel.add(label);
