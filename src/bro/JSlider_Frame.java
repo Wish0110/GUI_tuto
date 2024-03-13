@@ -28,6 +28,12 @@ public class JSlider_Frame implements ChangeListener {
 
         slider.setPaintLabels(true);
         slider.setFont(new Font("MV Boil",Font.PLAIN,15));
+        label.setFont(new Font("MV Boil",Font.PLAIN,25));
+
+        slider.setOrientation(SwingConstants.VERTICAL);
+        //slider.setOrientation(SwingConstants.HORIZONTAL);
+
+        label.setText("°C = "+ slider.getValue());
 
         panel.add(slider);
         panel.add(label);
