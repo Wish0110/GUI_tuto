@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 
 public class MenuBars extends JFrame implements ActionListener {
 
@@ -33,6 +34,10 @@ public class MenuBars extends JFrame implements ActionListener {
         loadItem.addActionListener(this);
         saveItem.addActionListener(this);
         exitItem.addActionListener(this);
+
+        loadItem.setMnemonic(KeyEvent.VK_L);
+        saveItem.setMnemonic(KeyEvent.VK_L);
+        exitItem.setMnemonic(KeyEvent.VK_L);
 
         fileMenu.add(loadItem);
         fileMenu.add(saveItem);
