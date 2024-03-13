@@ -6,7 +6,7 @@ public class Main {
 
         //text field
 
-        new JComboBox_Frame();
+        new JSlider_Frame();
       }
 
 }
