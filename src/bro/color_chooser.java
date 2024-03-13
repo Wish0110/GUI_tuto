@@ -20,7 +20,7 @@ public class color_chooser extends JFrame implements ActionListener {
         label = new JLabel();
         label.setBackground(Color.white);
         label.setText("This is some text :D");
-        label.setFont(new Font("MV Boli", Font.PLAIN,100));
+        label.setFont(new Font("", Font.PLAIN,50));
         label.setOpaque(true);
 
         this.add(button);
@@ -31,5 +31,13 @@ public class color_chooser extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
+        if(e.getSource()==button) {
+            JColorChooser colorChooser = new JColorChooser();
+
+            Color color = JColorChooser.showDialog(null, "Pick a color...I guess", Color.black);
+
+            //label.setForeground(color);
+            label.setBackground(color);
+        }
     }
 }
