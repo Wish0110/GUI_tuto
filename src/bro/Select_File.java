@@ -26,6 +26,8 @@ public class Select_File extends JFrame implements ActionListener {
         if(e.getSource()==button) {
 
             JFileChooser fileChooser = new JFileChooser();
+
+            fileChooser.showOpenDialog(null);
         }
     }
 }
