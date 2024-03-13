@@ -36,8 +36,8 @@ public class MenuBars extends JFrame implements ActionListener {
         exitItem.addActionListener(this);
 
         loadItem.setMnemonic(KeyEvent.VK_L);
-        saveItem.setMnemonic(KeyEvent.VK_L);
-        exitItem.setMnemonic(KeyEvent.VK_L);
+        saveItem.setMnemonic(KeyEvent.VK_S);
+        exitItem.setMnemonic(KeyEvent.VK_E);
 
         fileMenu.add(loadItem);
         fileMenu.add(saveItem);
