@@ -7,23 +7,32 @@ import java.awt.event.ActionListener;
 
 public class MenuBars extends JFrame implements ActionListener {
 
+    JMenuBar menuBar;
+    JMenu fileMenu;
+    JMenu editMenu;
+    JMenu helpMenu;
+    JMenuItem loadItem;
+    JMenuItem saveItem;
+    JMenuItem exitItem;
     MenuBars(){
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(500,500);
         this.setLayout(new FlowLayout());
 
-        JMenuBar menuBar = new JMenuBar();
+        menuBar = new JMenuBar();
 
-        JMenu fileMenu = new JMenu("File");
-        JMenu editMenu = new JMenu("Edit");
-        JMenu helpMenu = new JMenu("Help");
+        fileMenu = new JMenu("File");
+        editMenu = new JMenu("Edit");
+        helpMenu = new JMenu("Help");
 
-        JMenuItem loadItem = new JMenuItem("Load");
-        JMenuItem saveItem = new JMenuItem("Save");
-        JMenuItem exitItem = new JMenuItem("Exit");
+        loadItem = new JMenuItem("Load");
+        saveItem = new JMenuItem("Save");
+        exitItem = new JMenuItem("Exit");
 
         loadItem.addActionListener(this);
+        saveItem.addActionListener(this);
+        exitItem.addActionListener(this);
 
         fileMenu.add(loadItem);
         fileMenu.add(saveItem);
@@ -40,5 +49,14 @@ public class MenuBars extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
+        if(e.getSource()==loadItem) {
+            System.out.println("*beep boop* you loaded a file");
+        }
+        if(e.getSource()==saveItem) {
+            System.out.println("*beep boop* you save a file");
+        }
+        if(e.getSource()==exitItem) {
+            System.exit(0);
+        }
     }
 }
