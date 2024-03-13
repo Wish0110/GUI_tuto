@@ -6,7 +6,7 @@ public class Main {
 
         //text field
 
-        new JSlider_Frame();
+        new progress_bar();
       }
 
 }
