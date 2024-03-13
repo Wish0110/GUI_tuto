@@ -28,11 +28,11 @@ public class progress_bar {
 
         bar.setValue(counter);
         try {
-            Thread.sleep(150);
+            Thread.sleep(50);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        counter +=10;
+        counter +=1;
         }
     }
 }
