@@ -2,14 +2,13 @@ package bro;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.io.File;
 import javax.imageio.*;
 
 public class check {
 
     private JPanel colorBox;
     private JComboBox<String> colorSelector;
-    private JLabel backgroundLabel;
+
 
     public check() {
         createUI();
@@ -40,24 +39,9 @@ public class check {
         gbc.fill = GridBagConstraints.HORIZONTAL;
         gbc.anchor = GridBagConstraints.CENTER;
 
-        ImageIcon backgroundImage = null;
-        try {
-            backgroundImage = new ImageIcon(ImageIO.read(new File("backgroundimg1.png")));
-        } catch (Exception e) {
-            // Handle potential exceptions like file not found
-            System.err.println("Error loading background image: " + e.getMessage());
-        }
-
-        // Create a label to display the background image
-        backgroundLabel = new JLabel(backgroundImage);
-
-        // Set the label to cover the entire frame (adjust as needed)
-        backgroundLabel.setSize(frame.getWidth(), frame.getHeight());
-
         // Add combobox
         gbc.gridx = 0;
         gbc.gridy = 0;
-        gbc.fill = GridBagConstraints.BOTH;
         frame.add(colorSelector, gbc);
 
         gbc.insets = new Insets(0, 200, 0, 0);
