@@ -33,7 +33,7 @@ public class check {
         GridBagConstraints gbc = new GridBagConstraints();
 
         // Center components horizontally
-        gbc.fill = GridBagConstraints.HORIZONTAL;
+        gbc.fill = GridBagConstraints.VERTICAL;
         gbc.anchor = GridBagConstraints.CENTER;
 
         // Add combobox
