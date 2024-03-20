@@ -28,22 +28,28 @@ public class check {
         });
 
         // Create a horizontal layout manager
-        JPanel centerPanel = new JPanel();
-        centerPanel.setLayout(new BorderLayout());
-        centerPanel.add(colorSelector, BorderLayout.WEST);
-        centerPanel.add(colorBox, BorderLayout.EAST);
+        GridBagLayout layout = new GridBagLayout();
+        frame.setLayout(layout);
+        GridBagConstraints gbc = new GridBagConstraints();
 
-        // Set frame size and minimum size
+        // Center components horizontally
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        gbc.anchor = GridBagConstraints.CENTER;
+
+        // Add combobox
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        frame.add(colorSelector, gbc);
+
+        // Add color box below combobox
+        gbc.gridy = 1;
+        frame.add(colorBox, gbc);
+
         frame.setSize(900, 600);
         frame.setMinimumSize(new Dimension(900, 600));
-
-        // Add center panel to the frame
-        frame.add(centerPanel, BorderLayout.CENTER);
-
-        frame.pack();
         frame.setVisible(true);
 
-        updateColor();// Set initial color
+        updateColor();  // Set initial color
     }
 
     private void updateColor() {
