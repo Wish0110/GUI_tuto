@@ -17,7 +17,7 @@ public class check {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         colorBox = new JPanel();
-        colorBox.setPreferredSize(new Dimension(200, 200));
+        colorBox.setPreferredSize(new Dimension(100, 100));
 
         colorSelector = new JComboBox<>(new String[]{"Black", "Red", "Pink"});
         colorSelector.addActionListener(new ActionListener() {
@@ -41,8 +41,9 @@ public class check {
         gbc.gridy = 0;
         frame.add(colorSelector, gbc);
 
+        gbc.insets = new Insets(0, 100, 0, 0);
         // Add color box below combobox
-        gbc.gridy = 1;
+        gbc.gridx = 1;
         frame.add(colorBox, gbc);
 
         frame.setSize(900, 600);
