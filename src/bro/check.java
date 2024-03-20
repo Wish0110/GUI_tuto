@@ -20,6 +20,7 @@ public class check {
         colorBox.setPreferredSize(new Dimension(100, 100));
 
         colorSelector = new JComboBox<>(new String[]{"Black", "Red", "Pink"});
+        colorSelector.setPreferredSize(new Dimension(200, 30));
         colorSelector.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -33,7 +34,7 @@ public class check {
         GridBagConstraints gbc = new GridBagConstraints();
 
         // Center components horizontally
-        gbc.fill = GridBagConstraints.VERTICAL;
+        gbc.fill = GridBagConstraints.HORIZONTAL;
         gbc.anchor = GridBagConstraints.CENTER;
 
         // Add combobox
@@ -41,7 +42,7 @@ public class check {
         gbc.gridy = 0;
         frame.add(colorSelector, gbc);
 
-        gbc.insets = new Insets(0, 100, 0, 0);
+        gbc.insets = new Insets(0, 200, 0, 0);
         // Add color box below combobox
         gbc.gridx = 1;
         frame.add(colorBox, gbc);
