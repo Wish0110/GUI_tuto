@@ -3,12 +3,14 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import javax.imageio.*;
+import java.io.File;
+import java.io.IOException;
 
 public class check {
 
     private JPanel colorBox;
     private JComboBox<String> colorSelector;
-
+    private ImageIcon backgroundImageIcon;
 
     public check() {
         createUI();
@@ -17,7 +19,11 @@ public class check {
     private void createUI() {
         JFrame frame = new JFrame("Color Changer");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+        try {
+            backgroundImageIcon = new ImageIcon(ImageIO.read(new File("C:\\Users\\Admin\\Downloads\\backgroundimg1.png")));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         colorBox = new JPanel();
         colorBox.setPreferredSize(new Dimension(100, 100));
 
