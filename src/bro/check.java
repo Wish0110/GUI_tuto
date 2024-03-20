@@ -36,6 +36,7 @@ public class check {
         frame.add(colorBox);
 
         frame.setSize(900, 600);
+        frame.setMinimumSize(new Dimension(900, 600));
         frame.pack();
         frame.setVisible(true);
 
