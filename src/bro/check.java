@@ -35,6 +35,7 @@ public class check {
         frame.add(colorSelector);
         frame.add(colorBox);
 
+        frame.setSize(900, 600);
         frame.pack();
         frame.setVisible(true);
 
