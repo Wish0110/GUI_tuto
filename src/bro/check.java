@@ -2,11 +2,13 @@ package bro;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import javax.imageio.*;
 
 public class check {
 
     private JPanel colorBox;
     private JComboBox<String> colorSelector;
+
 
     public check() {
         createUI();
