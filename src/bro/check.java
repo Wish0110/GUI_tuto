@@ -28,19 +28,22 @@ public class check {
         });
 
         // Create a horizontal layout manager
-        FlowLayout layout = new FlowLayout(FlowLayout.LEFT, 100, 0); // Align components to the left
+        JPanel centerPanel = new JPanel();
+        centerPanel.setLayout(new BorderLayout());
+        centerPanel.add(colorSelector, BorderLayout.WEST);
+        centerPanel.add(colorBox, BorderLayout.EAST);
 
-        // Add components to the frame using the horizontal layout
-        frame.setLayout(layout);
-        frame.add(colorSelector);
-        frame.add(colorBox);
-
+        // Set frame size and minimum size
         frame.setSize(900, 600);
         frame.setMinimumSize(new Dimension(900, 600));
+
+        // Add center panel to the frame
+        frame.add(centerPanel, BorderLayout.CENTER);
+
         frame.pack();
         frame.setVisible(true);
 
-        updateColor(); // Set initial color
+        updateColor();// Set initial color
     }
 
     private void updateColor() {
